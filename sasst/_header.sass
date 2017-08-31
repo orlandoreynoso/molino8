@@ -1,0 +1,136 @@
+.m-header
+	margin: 0px
+	padding: 0px
+	.ls
+		padding-bottom: 10px
+		padding-top: 4px
+		.logo
+			display: block
+			max-width: 300px
+			min-width: 300px
+			height: auto
+			img
+				width: 90%
+				display: block
+				vertical-align: top
+				&:hover
+					filter: alpha(opacity=80)
+					-moz-opacity: 1.0
+					opacity: 0.5
+					-khml-opacity: 1.0
+					transition: 0.5s ease
+					background-color: #ffffff				
+	.sm
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		align-items: center
+		align-content: center
+		padding-top: 20px
+		.ubicacion
+			text-align: center
+			width: 100%
+			font-family: 'Oswald', sans-serif
+			margin-bottom: 5px
+			.icon
+				color: $rosa
+				margin-right: 5px
+		.search
+			width: 100%
+			margin: 0px auto
+			padding-top: 5px
+			.searchbar
+				text-align: center
+
+/*======== old =============*/
+#header
+	display: -webkit-box
+	display: -webkit-flex
+	display: -ms-flexbox
+	display: flex
+	-webkit-flex-flow: row wrap
+	-ms-flex-flow: row wrap
+	flex-flow: row wrap
+	-webkit-box-pack: justify
+	-webkit-justify-content: space-between
+	-ms-flex-pack: justify
+	justify-content: space-between
+	padding: 10px 0px 8px 0px
+	#sm
+		width: 50%
+		display: -webkit-box
+		display: -webkit-flex
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-pack: justify
+		-webkit-justify-content: space-between
+		-ms-flex-pack: justify
+		justify-content: space-between
+		-webkit-box-align: center
+		-webkit-align-items: center
+		-ms-flex-align: center
+		align-items: center
+		#search
+			width: 65%
+		#ubicacion
+			width: 30%
+			.icon-location2
+				margin: 0px auto
+				text-align: center
+				padding-bottom: 7px
+				color: #d53132
+			#texto
+				font-family: 'Oswald', sans-serif
+				text-transform: uppercase
+				color: #333333
+				margin: 0px auto
+				text-align: center
+			span
+				width: 95%
+				display: block
+	#ls
+		width: 50%
+		display: -webkit-box
+		display: -webkit-flex
+		display: -ms-flexbox
+		display: flex
+		#slogan
+			margin-left: 10px
+			font-family: 'Oswald', sans-serif
+			text-transform: uppercase
+			padding: 13px 0px 0px 0px
+			transition: 0.5s ease
+			-o-transition: 0.5s ease
+			-webkit-transition: 0.5s ease
+			list-style: none
+			text-decoration: none
+			display: block
+			h2
+				color: #d53132
+				font-size: 0.8em
+				&:hover
+					color: #009FFF
+					transition: 0.5s ease
+					-o-transition: 0.5s ease
+					-webkit-transition: 0.5s ease
+			h1
+				color: #333333
+				font-size: 2.8em
+				&:hover
+					color: #009FFF
+					transition: 0.5s ease
+					-o-transition: 0.5s ease
+					-webkit-transition: 0.5s ease
+		#logo
+			img
+				width: 112px
+				height: 117px
+				&:hover
+					filter: alpha(opacity=80)
+					-moz-opacity: 1.0
+					opacity: 0.5
+					-khml-opacity: 1.0
+					transition: 0.5s ease
+					-o-transition: 0.5s ease
+					-webkit-transition: 0.5s ease
+					background-color: #ffffff

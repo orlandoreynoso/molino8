@@ -2,6 +2,7 @@
 
 $variable = get_the_ID();
 
+
 function get_pastorales($pagina, $perpage){
     $args = array(
         'post_type' => 'page',
@@ -22,6 +23,13 @@ function get_pastorales($pagina, $perpage){
        ?>
     <div class="list col-md-3">
     <div class="todo">
+
+
+
+
+
+
+
       <a class="ir-agrupacion" href="<?php the_permalink(); ?>">
         <div class="thumb img-responsive" >
           <?php
@@ -32,8 +40,9 @@ function get_pastorales($pagina, $perpage){
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/dar-la-vida-por-los-demas.jpg" alt="">
           <?php  }         ?>
         </div>
-        <h5><?php the_title(); ?></h5>
+        <h5><?php the_title(); ?> - <?php echo $calorias =  get_post_meta( get_the_ID(), 'dia-metaboxes', true ); ?> - <?php echo $calorias =  get_post_meta( get_the_ID(), 'hora-metaboxes', true ); ?> </h5>
       </a>
+
     </div>
     </div>
 

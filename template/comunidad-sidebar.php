@@ -45,3 +45,15 @@
   wp_reset_postdata();
   ?>
 </div>
+
+<!-- ***** aqui va lo de las presentaciones -->
+<?php $the_query = new WP_Query(contenidosPorNombre('contenidos','presentaciones-comunidades-critianas',1));  ?>
+<div class="contenidos-c galeria">
+  <?php
+  while ($the_query -> have_posts()){
+    $the_query -> the_post();
+    the_content( );
+  }
+  wp_reset_postdata();
+  ?>
+</div>

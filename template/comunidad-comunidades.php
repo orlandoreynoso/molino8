@@ -12,7 +12,7 @@ function get_pastorales($pagina, $perpage){
     return $args;
 }
 ?>
-<div class="m-comunidades row">
+<div class="m-comunidades">
     <?php $the_query = new WP_Query(get_pastorales($variable,-1));   ?>
     <?php // $the_query = new WP_Query(get_agrupaciones(2883,-1));    ?>
     <?php while ($the_query -> have_posts()){

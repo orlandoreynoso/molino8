@@ -15,17 +15,14 @@
         <div class="interiores-comunidad">
           <?php get_template_part( 'template/comunidad','contenido') ?>
         </div>
+        <!-- div class="col-md-12 con" -->
+          <?php get_template_part( 'template/comunidad','comunidades') ?>
+        <!-- /div -->
       </div><!-- finaliza el cuadro principal -->
       <div class="col-xs-12 col-md-4 side-comunidades">
         <div class="entradas">
             <?php get_template_part( 'template/comunidad','sidebar') ?>
         </div>
-      </div>
-    </div>
-    <!-- Aqui se despliegan todas las pequeñas comunidades  -->
-    <div class="row">
-      <div class="col-md-12 con">
-        <?php get_template_part( 'template/comunidad','comunidades') ?>
       </div>
     </div>
   </div>

@@ -1,25 +1,47 @@
-<p>Señor Jesús, tú has venido para anunciar e iniciar el Reino,
+<?php
+/*
+    $args = array(
+        'post_type' => 'contenidos',
+        'pagename' => 'oracion-la-comunidad','galeria-comunidades',
+        'posts_per_page'         => 1,
+    );
+*/
+/*====  oranción de la comunidades cristianas ======= */
+?>
 
-y nos llamas a seguirte,
+<?php $the_query = new WP_Query(contenidosPorNombre('contenidos','oracion-la-comunidad',1));  ?>
+<div class="contenidos-c oracion">
+  <?php
+  while ($the_query -> have_posts()){
+    $the_query -> the_post();
+    the_content( );
+  }
+  wp_reset_postdata();
+  ?>
+</div>
 
-Pero no quieres seguidores individuales
+<?php /*====  galerrìa de comunidades cristianas ======= */ ?>
 
-Que vivan en solitario su aventura
+<?php $the_query = new WP_Query(contenidosPorNombre('contenidos','galeria-comunidades',1));  ?>
+<div class="contenidos-c galeria">
+  <?php
+  while ($the_query -> have_posts()){
+    $the_query -> the_post();
+    the_content( );
+  }
+  wp_reset_postdata();
+  ?>
+</div>
 
-Nosotros queremos ser comunidad, en la que todos nos saludemos, nos queramos, en la que todos compartamos la fe y pongamos a disposición de los otros las cualidades de cada uno, en la que todos nos sintamos evangelizados y evangelizadores, en la que vivamos concretamente el ministerio y la responsabíñdad de ser Iglesia.
+<?php /*====  documentos-comunidades-cristianas de comunidades cristianas ======= */ ?>
 
-Señor Jesús, queremos ser seguidores tuyos para anunciar y construir el Reino en COMUNIDAD, ayúdanos.
-
-Amen.</p>
-
-<div class="col-xs-12 col-md-4 side">
-  <div class="entradas">
-    <div class="titulo_entradas">
-      <h3>Oración de la comunidad</h3>
-    </div>
-    <div class="recientes">
-      <?php // get_sidebar('id'); ?>
-
-    </div>
-  </div>
-</div><!--  finaliza el aside -->
+<?php $the_query = new WP_Query(contenidosPorNombre('contenidos','documentos-comunidades-cristianas',1));  ?>
+<div class="contenidos-c docs">
+  <?php
+  while ($the_query -> have_posts()){
+    $the_query -> the_post();
+    the_content( );
+  }
+  wp_reset_postdata();
+  ?>
+</div>

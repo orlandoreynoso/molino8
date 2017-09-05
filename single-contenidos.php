@@ -1,8 +1,9 @@
+
 <?php
 
 /*
-  Template Name: sigle
-  Template Post Type: post, page, product
+  Template Name: Contenidos para la comunidad
+  Template Post Type: post, page, product, post_type, post type
 */
 
  get_header();
@@ -11,7 +12,6 @@
 
 
 <section class="con-general">
-
   <div class="container">
      <div class="row">
         <div class="col-xs-12 col-md-8 con">
@@ -26,7 +26,7 @@
                 </div>
               </div>
               <div class="info">
-                <?php  echo "Esot en el single"; ?>
+                <?php echo "Estoy en el single de contenidos"; ?>
             <!-- h1><?php //   the_title(); ?></h1 -->
              <?php
               while ( have_posts() ) : the_post();

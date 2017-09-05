@@ -80,6 +80,8 @@ function slogan(){
     echo bloginfo('url');
     echo '" id="slogan"><h1>Santuario</h1><h2>nuestra señora del sagrado corazón</h2></a>';
 }
+
+include (TEMPLATEPATH . '/inc/contenidos.php');
 include (TEMPLATEPATH . '/libs/entradas.php'); 
 include (TEMPLATEPATH . '/libs/totop.php'); 
 include (TEMPLATEPATH . '/libs/breadcrumb.php'); 

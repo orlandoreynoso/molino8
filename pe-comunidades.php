@@ -8,7 +8,7 @@
 <section class="con-general">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-12 con">
+      <div class="col-xs-12 col-md-8 con">
         <div class="titulo">
           <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
         </div>
@@ -16,7 +16,14 @@
           <?php get_template_part( 'template/comunidad','contenido') ?>
         </div>
       </div><!-- finaliza el cuadro principal -->
-      <?php // get_template_part( 'template/comunidad','sidebar') ?>
+      <div class="col-xs-12 col-md-4 side-comunidades">
+        <div class="entradas">
+            <?php get_template_part( 'template/comunidad','sidebar') ?>
+        </div>
+      </div>
+    </div>
+    <!-- Aqui se despliegan todas las pequeñas comunidades  -->
+    <div class="row">
       <div class="col-md-12 con">
         <?php get_template_part( 'template/comunidad','comunidades') ?>
       </div>

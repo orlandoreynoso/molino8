@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
   Template Name: Categorias
@@ -16,8 +16,9 @@
      <div class="row">
           <div class="col-xs-12 col-md-8 con">
           <div class="titulo">
-            <div class="mapeo"><?php the_breadcrumb(); ?></div>
+            <div class="mapeo"><?php dimox_breadcrumbs(); ?></div>
           </div>
+          <?php echo "donde estoy";  ?>
             <?php if ( have_posts() ) : ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
@@ -30,10 +31,10 @@
                     </div>
                   </div>
                   <div class="thumb">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>              
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a>
                   </div>
                   <div class="info"><?php the_excerpt();  ?></div>
-            </div>   
+            </div>
 
 
           <?php endwhile; ?>
@@ -50,12 +51,12 @@
 
             <div class="recientes">
               <?php get_sidebar(); ?>
-            </div>  
-          </div>        
-        </div>      
+            </div>
+          </div>
+        </div>
     </div>
   </div>
-  
+
 </section>
 
 <?php get_footer();  ?>

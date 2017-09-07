@@ -47,7 +47,7 @@
 </div>
 
 <!-- ***** aqui va lo de las presentaciones -->
-<?php $the_query = new WP_Query(contenidosPorNombre('contenidos','presentaciones-comunidades-critianas',1));  ?>
+<?php $the_query = new WP_Query(contenidosPorNombre('contenidos','presentaciones-comunidades-cristianas',1));  ?>
 <div class="contenidos-c galeria">
   <?php
   while ($the_query -> have_posts()){

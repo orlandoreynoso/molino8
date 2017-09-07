@@ -778,13 +778,60 @@ footer {
       @media screen and (max-width: 360px) {
         .agrupaciones-desglose .c-agrupaciones .list {
           width: 100%; } }
+      .agrupaciones-desglose .c-agrupaciones .list .infocomunidades {
+        transition: 0.5s ease;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ffffff; }
+        .agrupaciones-desglose .c-agrupaciones .list .infocomunidades:hover {
+          border-bottom: 1px solid #46b271; }
+        .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion {
+          text-decoration: none;
+          transition: 0.5s ease; }
+          .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion:hover {
+            color: #293449; }
+            .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion:hover h5 {
+              color: #293449; }
+          .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion h5 {
+            font-size: 1em;
+            line-height: 1.5em;
+            font-family: "Open Sans", Arial, sans-serif;
+            margin-left: 5px;
+            font-weight: 600;
+            color: #46b271; }
+          .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb {
+            width: 100%;
+            height: 250px;
+            display: block;
+            padding: 10px; }
+            .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb img {
+              max-width: 100%;
+              height: 100%;
+              margin: 0px auto;
+              text-align: center;
+              vertical-align: top;
+              display: block; }
+              @media screen and (max-width: 600px) {
+                .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb img {
+                  height: auto; } }
+              .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb img:hover {
+                filter: alpha(opacity=70);
+                -moz-opacity: 1;
+                opacity: 0.7;
+                -khml-opacity: 1;
+                transition: 0.5s ease; }
+            @media screen and (max-width: 600px) {
+              .agrupaciones-desglose .c-agrupaciones .list .infocomunidades .ir-agrupacion .thumb {
+                height: auto;
+                width: 100%; } }
       .agrupaciones-desglose .c-agrupaciones .list .todo {
         width: 100%;
         height: 100%;
         transition: 0.5s ease;
         overflow: hidden;
         padding-bottom: 10px;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+        border: 1px solid #ffffff; }
         .agrupaciones-desglose .c-agrupaciones .list .todo:hover {
           border-bottom: 1px solid #46b271; }
         .agrupaciones-desglose .c-agrupaciones .list .todo .ir-agrupacion {
@@ -818,9 +865,9 @@ footer {
                 .agrupaciones-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb img {
                   height: auto; } }
               .agrupaciones-desglose .c-agrupaciones .list .todo .ir-agrupacion .thumb img:hover {
-                filter: alpha(opacity=50);
+                filter: alpha(opacity=70);
                 -moz-opacity: 1;
-                opacity: 0.5;
+                opacity: 0.7;
                 -khml-opacity: 1;
                 transition: 0.5s ease; }
             @media screen and (max-width: 600px) {
@@ -1028,9 +1075,9 @@ footer {
             .m-recomendaciones .c-recomendaciones .list .thumb img {
               height: auto; } }
           .m-recomendaciones .c-recomendaciones .list .thumb img:hover {
-            filter: alpha(opacity=50);
+            filter: alpha(opacity=70);
             -moz-opacity: 1;
-            opacity: 0.5;
+            opacity: 0.7;
             -khml-opacity: 1;
             transition: 0.5s ease; }
       .m-recomendaciones .c-recomendaciones .list .exe {
@@ -1143,9 +1190,9 @@ footer {
                 .msc-agrupaciones .c-agrupaciones .list .todo .ir-agrupacion .thumb img {
                   height: auto; } }
               .msc-agrupaciones .c-agrupaciones .list .todo .ir-agrupacion .thumb img:hover {
-                filter: alpha(opacity=50);
+                filter: alpha(opacity=70);
                 -moz-opacity: 1;
-                opacity: 0.5;
+                opacity: 0.7;
                 -khml-opacity: 1;
                 transition: 0.5s ease; }
             @media screen and (max-width: 600px) {

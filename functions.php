@@ -7,7 +7,9 @@ define('IMAGES',TEMPPATH. "/images");
 // Esto es para aderir una imágen destacada.
 add_theme_support('post-thumbnails');
 //add_image_size( $name, $width, $height, $crop );
-/*========== Menu de navegacion ===============*/
+/*========== incluyendo los estilo que uso ===============*/
+
+include (TEMPLATEPATH. '/inc/estilos.php');
 
 //add_image_size( $name, $width, $height, $crop );
 the_post_thumbnail('thumbnail',1024,1024,true);       // Tamaño de la miniatura 150x150 píxeles 

@@ -4,16 +4,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<title><?php bloginfo('name'); ?></title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">	
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/bootstrap.min.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/estilo.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" type="image/x-icon" />
-	<!-- script type='text/javascript' src='<?php // bloginfo('stylesheet_directory'); ?>/js/analitycs.js'></script -->
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -23,7 +14,7 @@
 				<div class="col-xs-12 col-sm-8 col-md-6">
 					<div class="ls">
 						<?php logo(); ?>
-					</div>					
+					</div>
 				</div>
 				<div class="col-xs-12  col-sm-4 col-md-6">
 					<div class="sm">
@@ -32,10 +23,10 @@
 							<span id="texto">Mixco, Guatemala</span>
 						</div>
 						<div class="search"><?php  get_search_form(); ?></div>
-					</div>					
+					</div>
 				</div>
 			</div>
-		</div>		
+		</div>
 	</div>
 <div class="e-menu">
 	<div class="container">
@@ -51,7 +42,7 @@
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					      </button>
-			    		  <a class="navbar-brand" href="#">Menu</a> 
+			    		  <a class="navbar-brand" href="#">Menu</a>
 					    </div>
 					        <?php
 					            wp_nav_menu( array(
